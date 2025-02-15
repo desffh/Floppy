@@ -9,15 +9,15 @@ C:\Program Files\Unity\Hub\Editor\2022.3.40f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker2
+AssetImportWorker3
 -projectPath
-C:/Users/yangj/OneDrive/바탕 화면/TowerDefense/타워디펜스게임/DefenseGame0
+C:/Users/yangj/OneDrive/바탕 화면/Floppy/타워디펜스게임/DefenseGame0
 -logFile
-Logs/AssetImportWorker2.log
+Logs/AssetImportWorker3.log
 -srvPort
-61182
-Successfully changed project path to: C:/Users/yangj/OneDrive/바탕 화면/TowerDefense/타워디펜스게임/DefenseGame0
-C:/Users/yangj/OneDrive/바탕 화면/TowerDefense/타워디펜스게임/DefenseGame0
+51896
+Successfully changed project path to: C:/Users/yangj/OneDrive/바탕 화면/Floppy/타워디펜스게임/DefenseGame0
+C:/Users/yangj/OneDrive/바탕 화면/Floppy/타워디펜스게임/DefenseGame0
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,18 +49,18 @@ C:/Users/yangj/OneDrive/바탕 화면/TowerDefense/타워디펜스게임/Defense
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21520]  Target information:
+Player connection [13768]  Target information:
 
-Player connection [21520]  * "[IP] 192.168.55.140 [Port] 0 [Flags] 2 [Guid] 1622101409 [EditorId] 1622101409 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H5NTCP6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [13768]  * "[IP] 192.168.55.140 [Port] 0 [Flags] 2 [Guid] 3077744093 [EditorId] 3077744093 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H5NTCP6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21520] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [21520] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13768] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [13768] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 19.93 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 21.84 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.40f1 (cbdda657d2f0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/yangj/OneDrive/바탕 화면/TowerDefense/타워디펜스게임/DefenseGame0/Assets
+[Subsystems] Discovering subsystems at path C:/Users/yangj/OneDrive/바탕 화면/Floppy/타워디펜스게임/DefenseGame0/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -72,47 +72,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56240
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56676
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.40f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.018426 seconds.
-- Loaded All Assemblies, in  0.425 seconds
+Registered in 0.023924 seconds.
+- Loaded All Assemblies, in  0.498 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1488 ms
+Android Extension - Scanning For ADB Devices 3796 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.870 seconds
-Domain Reload Profiling: 2291ms
-	BeginReloadAssembly (118ms)
+- Finished resetting the current domain, in  4.220 seconds
+Domain Reload Profiling: 4714ms
+	BeginReloadAssembly (152ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (168ms)
-		LoadAssemblies (117ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (97ms)
+	LoadAllAssembliesAndSetupDomain (188ms)
+		LoadAssemblies (149ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (165ms)
-			TypeCache.Refresh (163ms)
-				TypeCache.ScanAssembly (148ms)
+		AnalyzeDomain (184ms)
+			TypeCache.Refresh (183ms)
+				TypeCache.ScanAssembly (167ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (1870ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (4221ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1814ms)
+		SetupLoadedEditorAssemblies (4163ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1619ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (3936ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (133ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (155ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -121,7 +121,7 @@ Domain Reload Profiling: 2291ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.800 seconds
+- Loaded All Assemblies, in  0.836 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -129,47 +129,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.775 seconds
-Domain Reload Profiling: 1568ms
-	BeginReloadAssembly (172ms)
+- Finished resetting the current domain, in  0.803 seconds
+Domain Reload Profiling: 1631ms
+	BeginReloadAssembly (161ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (58ms)
-	LoadAllAssembliesAndSetupDomain (513ms)
-		LoadAssemblies (409ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (552ms)
+		LoadAssemblies (432ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (202ms)
-			TypeCache.Refresh (171ms)
-				TypeCache.ScanAssembly (151ms)
-			ScanForSourceGeneratedMonoScriptInfo (23ms)
+		AnalyzeDomain (214ms)
+			TypeCache.Refresh (181ms)
+				TypeCache.ScanAssembly (161ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
 			ResolveRequiredComponents (7ms)
-	FinalizeReload (776ms)
+	FinalizeReload (803ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (609ms)
+		SetupLoadedEditorAssemblies (627ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
+			InitializePlatformSupportModulesInManaged (35ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (93ms)
-			ProcessInitializeOnLoadAttributes (422ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (432ms)
 			ProcessInitializeOnLoadMethodAttributes (44ms)
-			AfterProcessingInitializeOnLoad (14ms)
+			AfterProcessingInitializeOnLoad (15ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 4.50 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.52 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4090 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (57.2 KB). Loaded Objects now: 4564.
-Memory consumption went from 151.1 MB to 151.0 MB.
-Total: 2.470400 ms (FindLiveObjects: 0.198700 ms CreateObjectMapping: 0.083700 ms MarkObjects: 2.102900 ms  DeleteObjects: 0.084000 ms)
+Unloading 32 unused Assets / (57.1 KB). Loaded Objects now: 4564.
+Memory consumption went from 151.5 MB to 151.5 MB.
+Total: 2.378800 ms (FindLiveObjects: 0.195000 ms CreateObjectMapping: 0.095200 ms MarkObjects: 2.003200 ms  DeleteObjects: 0.084200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -184,3 +184,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ������ ���� �Ǵ� ���� ���α׷� ��û ������ I/O �۾��� ��ҵǾ����ϴ�.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

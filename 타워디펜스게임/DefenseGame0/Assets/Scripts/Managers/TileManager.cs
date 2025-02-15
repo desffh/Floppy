@@ -138,9 +138,6 @@ public class TileManager : MonoBehaviour
 
                 Destroy(currentUnit);
 
-                
-
-
                 StartCoroutine(UnitButtonActive());
                 return;
             }

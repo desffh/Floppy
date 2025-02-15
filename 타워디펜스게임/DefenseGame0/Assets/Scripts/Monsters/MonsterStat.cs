@@ -26,8 +26,6 @@ public abstract class MonsterStat : MonoBehaviour
             HPslider.maxValue = maxHealth;
             HPslider.value = currentHealth;
         }
-
-        //Debug.Log($"MonsterStat 초기화: MaxHealth={maxHealth}, CurrentHealth={currentHealth}");
     }
 
     public void SetHPBar(Slider slider)
@@ -37,7 +35,6 @@ public abstract class MonsterStat : MonoBehaviour
 
         if (HPslider != null)
         {
-            //Debug.Log($"슬라이더 초기화: MaxHealth={maxHealth}, CurrentHealth={currentHealth}");
             HPslider.maxValue = maxHealth;
             HPslider.value = currentHealth;
         }

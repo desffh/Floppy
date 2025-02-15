@@ -7,7 +7,7 @@ public class MonsterCount : MonoBehaviour
 {
     public static MonsterCount Instance; // Singleton으로 관리
 
-    private int monsterCount = 0;        // 활성화된 몬스터의 수
+    public int monsterCount = 0;        // 활성화된 몬스터의 수
     public Text monsterCountText;       // UI Text로 몬스터 카운트 표시
 
     GameResult GameResult;
@@ -28,6 +28,7 @@ public class MonsterCount : MonoBehaviour
         UpdateMonsterCountUI();
         GameResult = gameObject.GetComponent<GameResult>();
     }
+
 
     public void IncreaseCount()
     {
