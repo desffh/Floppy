@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 43
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -272,14 +272,14 @@ MonoBehaviour:
     y: 698
     width: 1594
     height: 249
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,7 +327,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2209
+    x: 289
     y: 73
     width: 1303
     height: 677
@@ -427,7 +427,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 73
     width: 288
     height: 677
@@ -444,9 +444,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 38660000
-      m_LastClickedID: 26168
-      m_ExpandedIDs: 16fbffff366300001c6400007a6400000a6500004c650000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 16fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -645,7 +645,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2209
+    x: 289
     y: 73
     width: 1303
     height: 677
@@ -994,9 +994,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.2735195, y: 0.19756535, z: 0.0495162}
+    m_Target: {x: 0.7908146, y: 1.5401734, z: 0.0022051004}
     speed: 2
-    m_Value: {x: 1.2735195, y: 0.19756535, z: 0.0495162}
+    m_Value: {x: -1.0262886, y: 0.42136514, z: 0.045749284}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1046,9 +1046,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.726604
+    m_Target: 9.779493
     speed: 2
-    m_Value: 5.726604
+    m_Value: 6.1033125
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1093,7 +1093,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1920
+    x: 0
     y: 771
     width: 1593
     height: 228
@@ -1118,7 +1118,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scripts/Monsters
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1126,16 +1126,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scripts/Monsters
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\yangj\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Floppy\\\uD0C0\uC6CC\uB514\uD39C\uC2A4\uAC8C\uC784\\DefenseGame0"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 40}
-    m_SelectedIDs: 6c690000
-    m_LastClickedID: 26988
-    m_ExpandedIDs: 000000006a6900006c6900006e690000706900007269000074690000766900008269000000ca9a3b
+    scrollPos: {x: 0, y: 48}
+    m_SelectedIDs: 98690000
+    m_LastClickedID: 27032
+    m_ExpandedIDs: 000000006a6900006c6900006e6900007069000072690000746900007669000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1190,7 +1190,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ee5900002c640000000000003a8700003a6400004a8100001a0301006c6600008266000080660000da8f000040200100ca6700005a8e00004867000050e7000056e70000e4620000cce70000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1239,10 +1239,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1920
-    y: 696
+    x: 0
+    y: 771
     width: 1593
-    height: 303
+    height: 228
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1273,7 +1273,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3514
+    x: 1594
     y: 73
     width: 325
     height: 926

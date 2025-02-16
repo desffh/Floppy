@@ -14,7 +14,6 @@ public class MonsterController : MonoBehaviour
 
     public bool isStopped;
 
-    private bool isApproachingTarget = false; // 유닛 위치로 이동 중인지 확인
     private Vector3 targetPosition; // 목표 위치(유닛 위치)
     private Collider2D collidedUnit; // 충돌한 유닛을 추적
 
@@ -26,20 +25,7 @@ public class MonsterController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isApproachingTarget)
-        {
-            Vector3 targetPositionXOnly = new Vector3(targetPosition.x, transform.position.y, transform.position.z);
-            // 천천히 유닛 위치로 이동
-            transform.position = Vector3.MoveTowards(transform.position, targetPositionXOnly, approachSpeed * Time.fixedDeltaTime);
-
-            // 목표 위치에 도달하면 멈춤
-            if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
-            {
-                isApproachingTarget = false;
-                isStopped = true; // 도달 후 멈춤
-            }
-        }
-        else if (!isStopped)
+        if (!isStopped)
         {
             // 기본 왼쪽으로 이동
             transform.Translate(new Vector3(moveSpeed * -1, 0, 0));
@@ -70,7 +56,6 @@ public class MonsterController : MonoBehaviour
             if (Vector3.Distance(unitPosition, monsterPosition) < 0.7f) // 겹침 거리 기준 설정
             {
                 targetPosition = unitPosition; // 유닛 위치를 목표로 설정
-                isApproachingTarget = true; // 유닛 위치로 이동 시작
             }
             else
             {

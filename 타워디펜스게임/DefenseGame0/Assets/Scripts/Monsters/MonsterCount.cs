@@ -30,12 +30,6 @@ public class MonsterCount : MonoBehaviour
     }
 
 
-    public void IncreaseCount()
-    {
-        monsterCount++;
-        UpdateMonsterCountUI();
-    }
-
     public void DecreaseCount()
     {
         monsterCount--;
