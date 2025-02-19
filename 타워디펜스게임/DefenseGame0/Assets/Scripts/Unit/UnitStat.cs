@@ -24,6 +24,8 @@ public abstract class UnitStat : MonoBehaviour
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();       // Animator 컴포넌트 가져오기
 
+
+
         if (HPslider != null)
         {
             HPslider.maxValue = maxHealth;
@@ -85,7 +87,7 @@ public abstract class UnitStat : MonoBehaviour
 
     protected virtual void Die()
     {
-        MonsterCount.Instance.DecreaseCount(); // 몬스터 카운트 감소 <- 이거 왜 여기있냐..?
+        //MonsterCount.Instance.DecreaseCount(); // 몬스터 카운트 감소 <- 이거 왜 여기있냐..?
         Debug.Log($"{gameObject.name} 사망!");
         Destroy(gameObject);
         HPslider.gameObject.SetActive(false);

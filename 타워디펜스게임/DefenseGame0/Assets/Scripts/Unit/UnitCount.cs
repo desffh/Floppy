@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class UnitCount : MonoBehaviour
 {
+
     TextMeshProUGUI totalUnitText; // 유닛 카운트 수 텍스트
 
     [SerializeField] TextMeshProUGUI totalUnit;
@@ -18,8 +19,10 @@ public class UnitCount : MonoBehaviour
     private Tile tile;
 
 
+
     private void Awake()
     {
+
         totalUnitText = GetComponent<TextMeshProUGUI>();
 
         unitCount = 0; // 현재 유닛 카운트 (시작 시 0)
@@ -57,9 +60,13 @@ public class UnitCount : MonoBehaviour
         UpdateUI();
     }
 
-
-    
-
+    public void DieCounting()
+    {
+        if (unitCount <= totalCount)
+        {
+            unitCount -= 1;
+        }
+    }
 
     // 현재 배치된 유닛카운트
     public int GetUnitCount()

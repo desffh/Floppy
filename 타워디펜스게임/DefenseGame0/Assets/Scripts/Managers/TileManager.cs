@@ -38,6 +38,7 @@ public class TileManager : MonoBehaviour
 
     private UnitCount unitCounting;
 
+
     // 배치된 유닛 리스트
     private List<int> units = new List<int>();
 
@@ -48,11 +49,14 @@ public class TileManager : MonoBehaviour
 
     Unit1Arrow Unit1Arrow;
 
+
     private void Start()
     {
         unitCounting = gameObject.AddComponent<UnitCount>();
 
         Unit1Arrow = GetComponent<Unit1Arrow>();
+
+
 
         UnitOver();
     }

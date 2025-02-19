@@ -63,6 +63,11 @@ public class Monster1Gizmo : MonoBehaviour
                                 unit2Stat.TakeDamage(damage);
                                 Debug.Log("Unit00020에게 데미지 전달됨");
                             }
+                            else if(unitStat is MainUnit mainStat)
+                            {
+                                mainStat.TakeDamage(damage);
+                                Debug.Log("메인 유닛에게 데미지 적용");
+                            }
                         }
 
                         // 마지막 공격 시간 갱신

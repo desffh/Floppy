@@ -18,6 +18,13 @@ public class Unit00010 : UnitStat
     private float attackspeed;
 
     private float movespeed;
+
+   
+
+    private void Awake()
+    {
+        
+    }
     protected override void Start()
     {
         maxHealth = 50;
@@ -26,7 +33,8 @@ public class Unit00010 : UnitStat
     }
     // 애니메이션 이벤트에서 호출
     protected override void Die()
-    {
+    { 
+
         base.Die(); // 기본 Die 동작 실행
     }
     protected override int Cost
