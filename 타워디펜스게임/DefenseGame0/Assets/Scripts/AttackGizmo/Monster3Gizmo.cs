@@ -64,6 +64,11 @@ public class Monster3Gizmo : MonoBehaviour
                                 unit2Stat.TakeDamage(damage);
                                 Debug.Log("Unit00020에게 데미지 전달됨");
                             }
+                            else if (unitStat is Unit00020 unit3Stat)
+                            {
+                                unit3Stat.TakeDamage(damage);
+                                Debug.Log("Unit00030에게 데미지 전달됨");
+                            }
                             else if (unitStat is MainUnit mainStat)
                             {
                                 mainStat.TakeDamage(damage);

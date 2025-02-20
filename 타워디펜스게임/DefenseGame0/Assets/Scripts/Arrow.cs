@@ -42,6 +42,11 @@ public class Arrow : MonoBehaviour
                     Monster3Stat monster3Stat = (Monster3Stat)monsterStat;
                     monster3Stat.TakeDamage(damage);
                 }
+                else if (monsterStat is Monster4Stat)
+                {
+                    Monster4Stat monster4Stat = (Monster4Stat)monsterStat;
+                    monster4Stat.TakeDamage(damage);
+                }
             }
             gameObject.SetActive(false);
         }

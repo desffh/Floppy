@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class UnitSlot : MonoBehaviour
 {
 
-
     public Sprite unitSprite; // 유닛 이미지
 
     public GameObject unitObject; // 유닛 객체
@@ -25,7 +24,7 @@ public class UnitSlot : MonoBehaviour
     // UnitStat 스크립트
     private UnitStat unitStat;
 
-    private Cost Cost;
+    public Cost Cost;
 
     private void Start()
     {
@@ -39,22 +38,11 @@ public class UnitSlot : MonoBehaviour
     // 유닛 구매
     public void BuyUnit()
     {
-
         tileManager.BuyUnit(unitObject, unitSprite);
+        Cost.totalCost -= costco;
     }
 
-    public void BuyCost()
-    {
-        if (costco <= Cost.totalCost)
-        {
-            Cost.totalCost -= costco;
 
-            GameObject.Find("Total_Cost_Text").GetComponent<TextMeshProUGUI>().text =
-                Cost.totalCost.ToString();
-
-            Debug.Log("차감된 코스트 수 :" + costco);
-        }
-    }
 
 
     public void OnValidate()

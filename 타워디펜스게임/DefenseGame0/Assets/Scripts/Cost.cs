@@ -28,6 +28,7 @@ public class Cost : MonoBehaviour
         }
     }
 
+
     private void Start()
     {
         totalCost = 0; // √ ±‚»≠

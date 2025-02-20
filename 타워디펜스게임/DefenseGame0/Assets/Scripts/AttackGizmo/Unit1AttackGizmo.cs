@@ -6,7 +6,7 @@ public class Unit1AttackGizmo : MonoBehaviour
 {
 
     public Transform Pos;
-    private Vector2 BoxSize = new Vector2(13.2f, 1.3f);
+    private Vector2 BoxSize = new Vector2(13.2f, 1.1f);
     private Vector2 Offset = new Vector2(7.4f, 0f);
 
     public Unit1Arrow unit1Arrow;

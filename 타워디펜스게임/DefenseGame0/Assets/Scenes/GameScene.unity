@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2445,7 +2446,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2487,6 +2488,7 @@ MonoBehaviour:
   icon: {fileID: 1665235569}
   costco: 10
   costText: {fileID: 23077309}
+  Cost: {fileID: 0}
 --- !u!114 &323722955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5098,7 +5100,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -5140,6 +5142,7 @@ MonoBehaviour:
   icon: {fileID: 550958857}
   costco: 5
   costText: {fileID: 871079680}
+  Cost: {fileID: 0}
 --- !u!114 &636655720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5585,7 +5588,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -5627,6 +5630,7 @@ MonoBehaviour:
   icon: {fileID: 1463664407}
   costco: 7
   costText: {fileID: 478532504}
+  Cost: {fileID: 0}
 --- !u!114 &711247731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7262,6 +7266,7 @@ MonoBehaviour:
   icon: {fileID: 50482182}
   costco: 3
   costText: {fileID: 1680734728}
+  Cost: {fileID: 0}
 --- !u!114 &945498380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7674,6 +7679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalUnit: {fileID: 0}
   totalCount: 7
+  tileManager: {fileID: 599416307}
 --- !u!4 &977059810
 Transform:
   m_ObjectHideFlags: 0
@@ -9595,9 +9601,10 @@ MonoBehaviour:
   - {fileID: 1663698754}
   - {fileID: 592797636}
   - {fileID: 1457857519}
-  level1Monster: {fileID: 6987107181086361652, guid: c6250eb95910c984db45f4dc98a325ce, type: 3}
+  level1Monster: {fileID: 1979258396411431192, guid: 94981c6d7895c8949a666eaa234eabe9, type: 3}
   level2Monster: {fileID: 6987107181086361652, guid: 083ba0f2b794ef94ba17d8a28d0244d8, type: 3}
-  bossMonster: {fileID: 6987107181086361652, guid: c6250eb95910c984db45f4dc98a325ce, type: 3}
+  level3Monster: {fileID: 6987107181086361652, guid: c6250eb95910c984db45f4dc98a325ce, type: 3}
+  level4Monster: {fileID: 6987107181086361652, guid: 3fa5097984cc32b468a4defcc3f8b31b, type: 3}
 --- !u!4 &1275725121
 Transform:
   m_ObjectHideFlags: 0
@@ -12675,7 +12682,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -12717,6 +12724,7 @@ MonoBehaviour:
   icon: {fileID: 2075651770}
   costco: 4
   costText: {fileID: 613852754}
+  Cost: {fileID: 0}
 --- !u!114 &1716620696
 MonoBehaviour:
   m_ObjectHideFlags: 0

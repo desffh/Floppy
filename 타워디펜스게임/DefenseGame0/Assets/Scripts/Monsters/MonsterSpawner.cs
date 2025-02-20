@@ -11,7 +11,9 @@ public class MonsterSpawner : MonoBehaviour
 
     [SerializeField] GameObject level1Monster;
     [SerializeField] GameObject level2Monster;
-    [SerializeField] GameObject bossMonster;
+    [SerializeField] GameObject level3Monster;
+    [SerializeField] GameObject level4Monster;
+
 
 
     // 몬스터를 순서별로 저장할 큐
@@ -24,14 +26,21 @@ public class MonsterSpawner : MonoBehaviour
         {
             monsterQueue.Enqueue(level1Monster);
         }
-        // level 2 몬스터 4개
-        for(int i = 0; i < 4; i++)
+        // level 2 몬스터 3개
+        for(int i = 0; i < 3; i++)
         {
             monsterQueue.Enqueue(level2Monster);
         }
-        // 보스 몬스터 1개
-        monsterQueue.Enqueue(bossMonster);
-
+        // level 3 몬스터 3개
+        for (int i = 0; i < 3; i++)
+        {
+            monsterQueue.Enqueue(level3Monster);
+        }
+        // level 4 몬스터 3개
+        for (int i = 0; i < 3; i++)
+        {
+            monsterQueue.Enqueue(level4Monster);
+        }
         MonsterCount.Instance.monsterCount = monsterQueue.Count;
     }
 

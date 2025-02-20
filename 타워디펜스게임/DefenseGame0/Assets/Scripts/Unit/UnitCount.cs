@@ -22,7 +22,6 @@ public class UnitCount : MonoBehaviour
 
     private void Awake()
     {
-
         totalUnitText = GetComponent<TextMeshProUGUI>();
 
         unitCount = 0; // 현재 유닛 카운트 (시작 시 0)

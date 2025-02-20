@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -50,15 +51,13 @@ public class TileManager : MonoBehaviour
     Unit1Arrow Unit1Arrow;
 
 
+
     private void Start()
     {
         unitCounting = gameObject.AddComponent<UnitCount>();
 
         Unit1Arrow = GetComponent<Unit1Arrow>();
 
-
-
-        UnitOver();
     }
 
     public void BuyUnit(GameObject unitPrefab, Sprite sprite)
@@ -74,20 +73,18 @@ public class TileManager : MonoBehaviour
         currentUnit.SetActive(true); // 유닛 활성화
     }
 
-    private void UnitOver()
+    public void UnitOver()
     {
-        // 유닛의 갯수가 한계 갯수와 같아지면 더이상 생성불가
-        if (unitCount.GetUnitTotalCount() == unitCount.GetUnitCount())
+        Debug.Log($"UnitCount: {unitCount.GetUnitCount()} / TotalCount: {unitCount.GetUnitTotalCount()}");
+
+
+        foreach (Button button in unitButtons)
         {
-            foreach (Button button in unitButtons)
-            {
-                button.interactable = false;
-            }
+            // 버튼 비활성화
+            Debug.Log("유닛이 꽉찼습니다 - 버튼 비활성화");
+            button.interactable = false;
         }
-        else
-        {
-            return;
-        }
+
     }
 
     // 코루틴 사용해서 버튼이 1초뒤에 활성화되게
@@ -104,6 +101,12 @@ public class TileManager : MonoBehaviour
 
     private void Update()
     {
+        if(unitCount.GetUnitTotalCount() == unitCount.GetUnitCount())
+        {
+             UnitOver();
+
+        }
+
         int mask = tileMask | DeleteZone;
 
         RaycastHit2D hit =
@@ -125,9 +128,6 @@ public class TileManager : MonoBehaviour
             {
                 button.interactable = false;
             }
-            
-
-          
 
             // 삭제존 클릭 시
             if (Input.GetMouseButtonDown(0) && hit.collider.gameObject.layer == LayerMask.NameToLayer("DeleteZone"))
