@@ -39,6 +39,7 @@ public class TileManager : MonoBehaviour
 
     private UnitCount unitCounting;
 
+    [SerializeField] Cost costmanager;
 
     // 배치된 유닛 리스트
     private List<int> units = new List<int>();
@@ -162,6 +163,7 @@ public class TileManager : MonoBehaviour
                 // 유닛이 없으면 생성 
                 if (!hit.collider.GetComponent<Tile>().hasUnits)
                 {
+
                     Tile tile = hit.collider.GetComponent<Tile>();
 
                     // 저장된 곳에서 충돌된 타일로 이동
@@ -169,7 +171,15 @@ public class TileManager : MonoBehaviour
                     tile.PlaceUnit(currentUnit, currentUnitSprite); // 타일에 유닛 저장
                     
                     unitCount.Counting(); // 유닛 카운트 증가
-                    
+
+                    // 유닛이 최초 배치될 때만 코스트 차감
+                    UnitCosts unitComponent = currentUnit.GetComponent<UnitCosts>();
+                    if (!unitComponent.isPlaced)
+                    {
+                        costmanager.SubtractCost(unitComponent.cost);
+                        unitComponent.isPlaced = true; // 이제 배치되었음을 표시
+                    }
+
                     // 타일에 유닛이 있으면 메세지 비활성화
                     if (tile != null)
                     {

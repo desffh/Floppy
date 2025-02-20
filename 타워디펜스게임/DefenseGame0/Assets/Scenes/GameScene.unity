@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2403,7 +2402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &323722952
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2422,9 +2421,9 @@ RectTransform:
   - {fileID: 1719160503}
   m_Father: {fileID: 327488425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 595.6553, y: -107.94835}
   m_SizeDelta: {x: 165.9015, y: 215.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323722953
@@ -4875,6 +4874,7 @@ MonoBehaviour:
   - {fileID: 1716620694}
   - {fileID: 711247729}
   - {fileID: 323722953}
+  costmanager: {fileID: 979948813}
   unitCount: {fileID: 977059809}
   saveTile: {fileID: 1294088044}
 --- !u!4 &599416308
@@ -5545,7 +5545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &711247728
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5564,9 +5564,9 @@ RectTransform:
   - {fileID: 941062272}
   m_Father: {fileID: 327488425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 595.6553, y: -107.94835}
   m_SizeDelta: {x: 165.9015, y: 215.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711247729
@@ -7679,7 +7679,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalUnit: {fileID: 0}
   totalCount: 7
-  tileManager: {fileID: 599416307}
 --- !u!4 &977059810
 Transform:
   m_ObjectHideFlags: 0

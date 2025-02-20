@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// 전체 코스트 관리
 public class Cost : MonoBehaviour
 {
     [SerializeField] Text totalcost;
@@ -33,6 +34,19 @@ public class Cost : MonoBehaviour
     {
         totalCost = 0; // 초기화
         StartCoroutine(AddCost());
+    }
+
+    public void SubtractCost(int amount)
+    {
+        totalCost -= amount;
+        if (totalCost < 0)
+        {
+            totalCost = 0;
+        }
+        Debug.Log("남은 코스트 수");
+
+        UpdateUI();
+
     }
 
     public void UpdateUI()

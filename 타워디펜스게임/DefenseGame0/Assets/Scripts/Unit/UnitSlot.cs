@@ -39,7 +39,6 @@ public class UnitSlot : MonoBehaviour
     public void BuyUnit()
     {
         tileManager.BuyUnit(unitObject, unitSprite);
-        Cost.totalCost -= costco;
     }
 
 

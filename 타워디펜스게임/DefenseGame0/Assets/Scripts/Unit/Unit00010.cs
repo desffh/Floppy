@@ -23,7 +23,7 @@ public class Unit00010 : UnitStat
 
     private void Awake()
     {
-        
+        Init();
     }
     protected override void Start()
     {
@@ -36,6 +36,7 @@ public class Unit00010 : UnitStat
     { 
 
         base.Die(); // 기본 Die 동작 실행
+        UnitCount.DelCounting();
     }
     protected override int Cost
     {

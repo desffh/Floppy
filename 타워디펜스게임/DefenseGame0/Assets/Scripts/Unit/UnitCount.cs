@@ -59,13 +59,6 @@ public class UnitCount : MonoBehaviour
         UpdateUI();
     }
 
-    public void DieCounting()
-    {
-        if (unitCount <= totalCount)
-        {
-            unitCount -= 1;
-        }
-    }
 
     // 현재 배치된 유닛카운트
     public int GetUnitCount()
