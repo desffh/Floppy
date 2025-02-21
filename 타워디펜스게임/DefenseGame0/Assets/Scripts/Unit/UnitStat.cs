@@ -19,15 +19,6 @@ public abstract class UnitStat : MonoBehaviour
     protected Animator animator;                   // 애니메이터 추가
     private bool isDying = false;                  // 죽음 상태 플래그
 
-    protected UnitCount UnitCount;
-
-    // 자식 클래스에서 초기화할 메서드
-    protected virtual void Init()
-    {
-        UnitCount = GetComponent<UnitCount>();
-    }
-
-
     private void Awake()
     {
         

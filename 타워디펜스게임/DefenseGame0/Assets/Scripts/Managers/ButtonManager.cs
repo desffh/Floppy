@@ -19,8 +19,16 @@ public class ButtonManager : MonoBehaviour
     // 시작부터 비활성화
     private void Awake()
     {
-        exitMenu.SetActive(false);
+       exitMenu.SetActive(false);
     }
+
+    public void Replay()
+    {
+        SceneManager.LoadScene("GameScene");
+        Time.timeScale = 1.0f;
+    }
+
+
 
     public void Exit()
     {
@@ -58,6 +66,7 @@ public class ButtonManager : MonoBehaviour
             isPause = false;
             return;
         }
-        
     }    
+
+
 }

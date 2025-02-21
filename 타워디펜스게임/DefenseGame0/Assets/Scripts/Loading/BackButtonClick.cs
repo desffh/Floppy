@@ -10,11 +10,41 @@ public class BackButtonClick : MonoBehaviour
 
     [SerializeField] Button stage2;
 
+    [SerializeField] GameObject QuitMenu;
+
     private void Awake()
     {
         // 버튼 첫 시작 비활성화 
         stage1.gameObject.SetActive(false);
         stage2.gameObject.SetActive(false);
+
+        QuitMenu.SetActive(false);
+    }
+
+    public void OnQuit()
+    {
+        QuitMenu.SetActive(true);
+
+    }
+
+    public void OnQuitYes()
+    {
+        Application.Quit();
+
+        // 에디터에서 확인용
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+
+        Debug.Log("O");
+
+    }
+
+    public void OnQuitNo()
+    {
+        QuitMenu.SetActive(false);
+        Debug.Log("X");
+
     }
 
     public void Stage1Click()
@@ -36,5 +66,9 @@ public class BackButtonClick : MonoBehaviour
     public void Stage1StartClick()
     {
         SceneManager.LoadScene("GameScene");
+        Time.timeScale = 1.0f;
+
     }
+
+
 }

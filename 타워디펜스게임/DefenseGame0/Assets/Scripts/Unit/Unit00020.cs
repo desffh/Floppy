@@ -18,6 +18,12 @@ public class Unit00020 : UnitStat
 
     private float movespeed;
 
+    private UnitCount unitCount;
+
+    private void Awake()
+    {
+        unitCount = FindObjectOfType<UnitCount>();
+    }
     protected override void Start()
     {
         maxHealth = 50;
@@ -28,6 +34,7 @@ public class Unit00020 : UnitStat
     protected override void Die()
     {
         base.Die(); // 기본 Die 동작 실행
+        unitCount.DelCounting();
     }
 
 

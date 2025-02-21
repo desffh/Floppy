@@ -19,11 +19,11 @@ public class Unit00010 : UnitStat
 
     private float movespeed;
 
-   
+    private UnitCount unitCount;
 
     private void Awake()
     {
-        Init();
+        unitCount = FindObjectOfType<UnitCount>();
     }
     protected override void Start()
     {
@@ -33,10 +33,14 @@ public class Unit00010 : UnitStat
     }
     // 애니메이션 이벤트에서 호출
     protected override void Die()
-    { 
-
+    {
+                       
         base.Die(); // 기본 Die 동작 실행
-        UnitCount.DelCounting();
+        if (unitCount != null)
+        {
+            unitCount.DelCounting(); // 유닛 카운트를 감소시키는 메서드 호출
+        }
+
     }
     protected override int Cost
     {
