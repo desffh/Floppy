@@ -12,7 +12,7 @@ public class Arrow : MonoBehaviour
 
     private float speed = 3;
 
-    public int damage = 5;
+    public int damage = 10;
 
     // 충돌 확인 
     private void OnTriggerEnter2D(Collider2D other)

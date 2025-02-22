@@ -91,7 +91,7 @@ public class TileManager : MonoBehaviour
     // 코루틴 사용해서 버튼이 1초뒤에 활성화되게
     IEnumerator UnitButtonActive()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.5f);
 
         // 유닛 목록 버튼 활성화
         foreach (Button button in unitButtons)

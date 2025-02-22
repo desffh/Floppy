@@ -2598,7 +2598,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: edbfa6036f5a7ee468b2b4ae1a9e34eb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9671,10 +9671,7 @@ MonoBehaviour:
   - {fileID: 1663698754}
   - {fileID: 592797636}
   - {fileID: 1457857519}
-  level1Monster: {fileID: 1979258396411431192, guid: 94981c6d7895c8949a666eaa234eabe9, type: 3}
-  level2Monster: {fileID: 6987107181086361652, guid: 083ba0f2b794ef94ba17d8a28d0244d8, type: 3}
-  level3Monster: {fileID: 6987107181086361652, guid: c6250eb95910c984db45f4dc98a325ce, type: 3}
-  level4Monster: {fileID: 6987107181086361652, guid: 3fa5097984cc32b468a4defcc3f8b31b, type: 3}
+  level1Monster: {fileID: 6987107181086361652, guid: c6250eb95910c984db45f4dc98a325ce, type: 3}
 --- !u!4 &1275725121
 Transform:
   m_ObjectHideFlags: 0

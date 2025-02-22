@@ -11,8 +11,6 @@ public class StageLock : MonoBehaviour
     // 현재 스테이지 번호
     public int stage = 0;
 
-    
-
     private void Awake()
     {
  

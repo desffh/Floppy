@@ -34,7 +34,7 @@ public class BackButtonClick : MonoBehaviour
         // 에디터에서 확인용
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-#endif
+        #endif
 
         Debug.Log("O");
 
