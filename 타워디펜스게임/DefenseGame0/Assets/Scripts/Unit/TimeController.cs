@@ -6,19 +6,33 @@ using UnityEngine.UIElements;
 
 public class TimeController : MonoBehaviour
 {
+    [SerializeField] GameResult gameResult;
+
     // 제한 시간 (분:초) 배열
     public Text[] timeText;
 
     public Text gameOverText;
 
-    float time = 600; // 제한시간 10분 
+    float time = 300; // 제한시간 10분 
     int min, sec;
 
     private void Start()
     {
-        timeText[0].text = "10";
+        timeText[0].text = "00";
         timeText[1].text = "00";
     }
+
+    public void GameLose()
+    {
+        if(min == 0 && sec == 0)
+        {
+            Time.timeScale = 0;
+
+            gameResult.Lose();
+        }
+
+    }
+
 
     private void Update()
     {
@@ -47,5 +61,6 @@ public class TimeController : MonoBehaviour
                 timeText[1].text = sec.ToString();
             }
         }
+        GameLose(); 
     }
 }

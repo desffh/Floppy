@@ -27,7 +27,7 @@ public class MainUnit : UnitStat
     }
     protected override void Start()
     {
-        maxHealth = 50;
+        maxHealth = 100;
         base.Start(); // 부모 클래스의 Start 호출
 
     }

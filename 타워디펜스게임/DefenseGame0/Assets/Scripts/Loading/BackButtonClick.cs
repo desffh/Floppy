@@ -65,7 +65,13 @@ public class BackButtonClick : MonoBehaviour
 
     public void Stage1StartClick()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("GameScene1");
+        Time.timeScale = 1.0f;
+
+    }
+    public void Stage2StartClick()
+    {
+        SceneManager.LoadScene("GameScene2");
         Time.timeScale = 1.0f;
 
     }

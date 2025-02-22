@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pos: {fileID: 7098987324943435895}
   attackCooldown: 5
-  damage: 6
+  damage: 2
 --- !u!114 &3186516074011492351
 MonoBehaviour:
   m_ObjectHideFlags: 0

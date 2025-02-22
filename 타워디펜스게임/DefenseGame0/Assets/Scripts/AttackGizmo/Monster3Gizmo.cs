@@ -16,7 +16,7 @@ public class Monster3Gizmo : MonoBehaviour
 
     bool previousState = false; // 이전 상태를 저장
 
-    public int damage = 6;
+    public int damage = 2;
 
     // 나중에 Awake로 변경
     private void Start()

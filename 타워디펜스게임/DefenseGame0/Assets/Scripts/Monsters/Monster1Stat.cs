@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-// 쿠션더미(일반형)
+// 이스피어
 public class Monster1Stat : MonsterStat
 {
     

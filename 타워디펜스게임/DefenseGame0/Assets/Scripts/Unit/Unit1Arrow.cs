@@ -22,7 +22,7 @@ public class Unit1Arrow : MonoBehaviour
     {
         if (!IsInvoking("ArrowCreate")) // 중복 호출 방지
         {
-            InvokeRepeating("ArrowCreate", 1f, 2f); // 2초 간격으로 반복
+            InvokeRepeating("ArrowCreate", 0f, 2f); // 2초 간격으로 반복
         }
     }
 

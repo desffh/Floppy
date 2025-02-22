@@ -23,7 +23,7 @@ public class Cost : MonoBehaviour
         {
             yield return new WaitForSeconds(2.0f);
 
-            totalCost += 5;
+            totalCost += 2;
             UpdateUI();
             //Debug.Log(totalCost);
         }

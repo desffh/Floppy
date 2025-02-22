@@ -411,6 +411,7 @@
 "Assets/Scripts/Monsters/MonsterSpawner.cs"
 "Assets/Scripts/Monsters/MonsterStat.cs"
 "Assets/Scripts/Snow.cs"
+"Assets/Scripts/SoundManager.cs"
 "Assets/Scripts/SpawnPoint.cs"
 "Assets/Scripts/Tile.cs"
 "Assets/Scripts/Unit/DeCounting.cs"

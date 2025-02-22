@@ -6,7 +6,7 @@ public class Unit1AttackGizmo : MonoBehaviour
 {
 
     public Transform Pos;
-    private Vector2 BoxSize = new Vector2(13.2f, 1.1f);
+    private Vector2 BoxSize = new Vector2(13.2f, 0.7f);
     private Vector2 Offset = new Vector2(7.4f, 0f);
 
     public Unit1Arrow unit1Arrow;
@@ -15,6 +15,7 @@ public class Unit1AttackGizmo : MonoBehaviour
 
 
     private bool hasArrow = false;
+
 
     private void Start()
     {
@@ -40,19 +41,24 @@ public class Unit1AttackGizmo : MonoBehaviour
 
             bool monsterDetected = false;
 
+
             foreach (Collider2D collider in collider2Ds)
             {
                 if (collider.CompareTag("Monster") && !hasArrow)
                 {
-                    //Debug.Log("몬스터와 충돌");
+                    Debug.Log("몬스터와 충돌");
 
 
                     // 몬스터와 충돌함
                     monsterDetected = true;
                     break;
-
-
                 }
+                if (collider2Ds.Length == 0)
+                {
+                    // 오버랩박스 안에 아무것도 없으면 monsterDetected를 false로 설정
+                    monsterDetected = false;
+                }
+                
             }
             if (monsterDetected && !unit1Arrow.hasArrow)
             {

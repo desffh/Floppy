@@ -12,7 +12,7 @@ public class Snow : MonoBehaviour
 
     private float speed = 2;
 
-    public int damage = 20;
+    public int damage = 5;
 
     // 충돌 확인 
     private void OnTriggerEnter2D(Collider2D other)

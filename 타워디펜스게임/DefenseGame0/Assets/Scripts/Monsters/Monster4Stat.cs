@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+// 프로즌 스티퍼ver2
 public class Monster4Stat : MonsterStat
 {
     private int defense;
@@ -16,7 +16,7 @@ public class Monster4Stat : MonsterStat
 
     protected override void Start()
     {
-        maxHealth = 50;
+        maxHealth = 150;
         base.Start(); // 부모 클래스의 Start 호출
 
     }

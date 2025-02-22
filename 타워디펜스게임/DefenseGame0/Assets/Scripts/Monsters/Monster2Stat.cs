@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 
 
-// 프로즌 스티퍼 (일반형)
+// 이스피어 ver2
 public class Monster2Stat : MonsterStat
 {
 
@@ -19,7 +19,7 @@ public class Monster2Stat : MonsterStat
 
     protected override void Start()
     {
-        maxHealth = 150;
+        maxHealth = 50;
         base.Start(); // 부모 클래스의 Start 호출
 
     }
