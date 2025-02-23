@@ -8,7 +8,7 @@ public class MonsterController : MonoBehaviour
 {
     public Vector3 FinalDestination; // 도착 지점
 
-    public float moveSpeed = 0.2f;
+    public float moveSpeed = 0.01f;
     public float approachSpeed = 0.2f; // 유닛 위치로 이동하는 속도
 
 

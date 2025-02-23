@@ -10,9 +10,9 @@ public class MonsterSpawner : MonoBehaviour
 
 
     [SerializeField] GameObject level1Monster;
-    //[SerializeField] GameObject level2Monster;
-    //[SerializeField] GameObject level3Monster;
-    //[SerializeField] GameObject level4Monster;
+    [SerializeField] GameObject level2Monster;
+    [SerializeField] GameObject level3Monster;
+    [SerializeField] GameObject level4Monster;
 
 
 
@@ -27,20 +27,20 @@ public class MonsterSpawner : MonoBehaviour
             monsterQueue.Enqueue(level1Monster);
         }
         // level 2 몬스터 3개
-        //for(int i = 0; i < 3; i++)
-        //{
-        //    monsterQueue.Enqueue(level2Monster);
-        //}
-        //// level 3 몬스터 3개
-        //for (int i = 0; i < 3; i++)
-        //{
-        //    monsterQueue.Enqueue(level3Monster);
-        //}
-        //// level 4 몬스터 3개
-        //for (int i = 0; i < 3; i++)
-        //{
-        //    monsterQueue.Enqueue(level4Monster);
-        //}
+        for(int i = 0; i < 3; i++)
+        {
+            monsterQueue.Enqueue(level2Monster);
+        }
+        // level 3 몬스터 3개
+        for (int i = 0; i < 3; i++)
+        {
+            monsterQueue.Enqueue(level3Monster);
+        }
+        // level 4 몬스터 3개
+        for (int i = 0; i < 3; i++)
+        {
+            monsterQueue.Enqueue(level4Monster);
+        }
         MonsterCount.Instance.monsterCount = monsterQueue.Count;
     }
 

@@ -13,7 +13,7 @@ public class TimeController : MonoBehaviour
 
     public Text gameOverText;
 
-    float time = 120; // 제한시간 10분 
+    float time = 30; // 제한시간 10분 
     int min, sec;
 
     private void Start()

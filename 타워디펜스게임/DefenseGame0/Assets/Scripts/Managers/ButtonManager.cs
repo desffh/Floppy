@@ -25,7 +25,12 @@ public class ButtonManager : MonoBehaviour
     public void Replay()
     {
         SceneManager.LoadScene("GameScene1");
-        Time.timeScale = 1.0f;
+        
+        if(Time.timeScale != 1.0f)
+        {
+            Time.timeScale = 1.0f;
+        }
+        Debug.Log("리플레이");
     }
 
 

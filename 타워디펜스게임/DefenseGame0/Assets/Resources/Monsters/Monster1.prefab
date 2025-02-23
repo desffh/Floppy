@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FinalDestination: {x: -6, y: 0, z: 0}
-  moveSpeed: 0.01
+  moveSpeed: 0.007
   approachSpeed: 0.2
   isStopped: 0
 --- !u!114 &-8112566092166184356
